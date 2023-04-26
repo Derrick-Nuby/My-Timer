@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Share+Tech+Mono&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+:root {
+    --fnormal: 'Open Sans', sans-serif;
+    --snormal: 'Montserrat', sans-serif;
+    --wtext: #000000;
+    --btext: ;
+    --wbackground: #fefefe;
+    --blackbackground: ;
+    --wboxes: #184e77;
+    --bboxes: ;
+}
+
+html {
+    font-size: 16px;
+    height: 100%;
+}
+
+
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: var(--wbackground);
+    color: var(--wtext);
+    font-size: 1rem;
+    font-family: var(--fnormal);
+}
+
+/* menu */
+
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--wboxes);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.menu__item {
+    background-color: var(--wboxes);
+    padding: 10px 90px;
+    transition: all 0.4s ease;
+    /* border: 2px solid white; */
+}
+
+.menu__item:hover {
+    color: white;
+    background-color: #1e6091;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+/* menu items done */
+
+
+.alltimes {
+    background-color: var(--wboxes);
+    margin: 70px 50px;
+    text-align: right;
+    padding: 100px 0px;
+}
+
+.unitime {
+    font-size: 8rem;
+    color: #000;
+    font-weight: 600;
+    font-family: var(--snormal);
+    padding: 0px 100px 0px 50px;
+    letter-spacing: 3px;
+      
+}
+.unitime > p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+}
+
+.destime {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 25px 100px 0px 50px;
+    letter-spacing: 8px;
+}
+
+.destime > p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--wboxes);
+    padding: 6px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    /* apply styles for mobile devices with screen width up to 768px */
+  
+    .menu {
+      flex-direction: column; /* change flex-direction to column */
+      align-items: center; /* center align items horizontally */
+    }
+  
+    .menu__item {
+      padding: 10px; /* reduce padding */
+      width: 100%; /* set width to 100% */
+      text-align: center; /* center align text */
+    }
+  }
+  
