@@ -31,6 +31,29 @@ body{
     font-family: var(--fnormal);
 }
 
+
+sup{
+    font-size: 0.5em;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+a {
+    all: unset;
+}
+
+.madeby > p > a {
+    color: #fefefe;
+    cursor: pointer;
+}
+
+.repo > p > a {
+    color: #fefefe;
+    cursor: pointer;
+}
+
+  
 /* menu */
 
 
@@ -74,7 +97,7 @@ body{
     font-weight: 600;
     font-family: var(--snormal);
     padding: 0px 100px 0px 50px;
-    letter-spacing: 3px;
+    letter-spacing: 15px;
       
 }
 .unitime > p {
@@ -102,37 +125,10 @@ footer {
     bottom: 0;
     width: 100%;
     background-color: var(--wboxes);
-    padding: 6px 60px;
+    padding: 6px 0px;
     display: flex;
-    justify-content: space-between;
+    gap: 420px;
+    justify-content: center;
+    align-items: center;
+
 }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 768px) {
-    /* apply styles for mobile devices with screen width up to 768px */
-  
-    .menu {
-      flex-direction: column; /* change flex-direction to column */
-      align-items: center; /* center align items horizontally */
-    }
-  
-    .menu__item {
-      padding: 10px; /* reduce padding */
-      width: 100%; /* set width to 100% */
-      text-align: center; /* center align text */
-    }
-  }
-  
