@@ -13,5 +13,5 @@
     
     const birthdayDate = new Date('2023-06-10');
     const daysLeft = Math.floor((birthdayDate - currentDate) / (1000 * 60 * 60 * 24));
-    const formattedDays = daysLeft + ' Days until Derrick\'s 21st Birthday!';
+    const formattedDays = daysLeft + ' Days until Derrick\'s 22nd Birthday!';
     actual_days.innerHTML = formattedDays;
